@@ -7,12 +7,44 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[])
+int main()
 {
+    
+    // variable declarations
+    int size1, size2;
+    
+    // user input of train sizes
+    cin >> size1 >> size2;
+    
+    while (size2 && size2) {
+        
+        
+        int first_train[size1];
+        int second_train[size2];
+        
+        
+        // user input of wagon numbers
+        for (int i = 0; i < size1; i++)
+            cin >> first_train[i];
+        
+        for (int i = 0; i < size2; i++)
+            cin >> second_train[i];
+        
+        // printing of arrays
+        for (int i = 0; i < size1; i++)
+            cout << first_train[i] << " ";
+        cout << endl;
+        for (int i = 0; i < size2; i++)
+            cout << second_train[i] << " ";
+        cout << endl;
+        
+        // user input of train sizes
+        cin >> size1 >> size2;
+    }
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
     return 0;
 }
 
