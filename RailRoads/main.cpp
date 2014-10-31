@@ -2,7 +2,9 @@
 //  main.cpp
 //  RailRoads
 //
-//  Created by Luis Alberto Lamadrid on 10/31/14.
+//  Created by Luis Lamadrid - A01191158
+//             Pau Escalante - A01191962
+//  On 10/31/14.
 //  Copyright (c) 2014 Luis Alberto Lamadrid. All rights reserved.
 //
 
@@ -39,6 +41,21 @@ int main()
         for (int i = 0; i < size2; i++)
             cout << second_train[i] << " ";
         cout << endl;
+        
+        // declaring matrix
+        int m[size1+1][size2+1];
+        
+
+        // printing and filling matrix with zeros
+        for (int i = 0; i <= size1; i++) {
+            for (int j = 0; j <= size2; j++) {
+                m[i][j] = 0;
+                cout << m[i][j] << " ";
+            }
+            cout << endl;
+        }
+        
+        
         
         // user input of train sizes
         cin >> size1 >> size2;
